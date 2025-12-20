@@ -1,18 +1,19 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+"use client";
 
-import { MadeWithDyad } from "@/components/made-with-dyad";
+import MainLayout from "@/components/layout/MainLayout";
+import OverviewSection from "@/components/OverviewSection";
+import ModelSection from "@/components/ModelSection";
+import ExplanationSection from "@/components/ExplanationSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">
-          Start building your amazing project here!
-        </p>
+    <MainLayout>
+      <div className="space-y-12">
+        <OverviewSection />
+        <ModelSection />
+        <ExplanationSection />
       </div>
-      <MadeWithDyad />
-    </div>
+    </MainLayout>
   );
 };
 
